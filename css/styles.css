@@ -26,3 +26,7 @@ body {
 .logo {
   height: 100px;
 }
+.main-nav ul li {
+  display: inline;
+  padding: 1em;
+}
