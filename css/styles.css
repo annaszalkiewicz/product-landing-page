@@ -8,6 +8,9 @@ body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  --color-1: #700a0a;
+  --color-2: #992626;
+  --color-2: #c35151;
 }
 
 /* HEADER */
@@ -16,18 +19,31 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 1em;
+  background-image: linear-gradient(45deg, var(--color-1), var(--color-2));
 }
 .brand {
   display: flex;
   flex-direction: row;
 }
 .logo {
-  height: 50px;
+  height: 60px;
 }
 .title {
   font-family: 'Tangerine', cursive;
+  font-size: 3em;
+  color: #fff;
+  margin: 0.2em 0 0 0;
+  align-items: center;
+}
+.main-nav {
+  display: block;
+  position: absolute;
+  width: 200px;
+  top: 110px;
+  right: 0;
 }
 .main-nav ul li {
   display: inline;
