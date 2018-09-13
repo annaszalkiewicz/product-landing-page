@@ -3,11 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
+html, body {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  overflow-x: hidden !important;
   --color-1: #700a0a;
   --color-2: #992626;
   --color-2: #c35151;
@@ -38,14 +39,33 @@ body {
   margin: 0.2em 0 0 0;
   align-items: center;
 }
+.hamburger-menu {
+  color: #fff;
+}
+.hamburger-menu:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .main-nav {
   display: block;
   position: absolute;
-  width: 200px;
+  width: 150px;
   top: 110px;
-  right: 0;
+  right: -20em;
+  background-color: #fff;
 }
 .main-nav ul li {
-  display: inline;
   padding: 1em;
+  list-style-type: none;
+  border-bottom: solid 1px var(--color-1); 
+}
+.main-nav ul li:last-child {
+  border-bottom: none;
+}
+.main-nav ul li a {
+  color: var(--color-1);
+  text-decoration: none;
+}
+.main-nav ul li a:hover {
+  color: var(--color-2);
 }
