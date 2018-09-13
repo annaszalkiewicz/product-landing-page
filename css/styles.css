@@ -26,6 +26,9 @@ body {
 .logo {
   height: 50px;
 }
+.title {
+  font-family: 'Tangerine', cursive;
+}
 .main-nav ul li {
   display: inline;
   padding: 1em;
