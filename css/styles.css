@@ -13,6 +13,7 @@ html, body {
   --color-1: #700a0a;
   --color-2: #992626;
   --color-2: #c35151;
+  --btn-color: #ff9800;
 }
 .header, .mainm ,footer {
   overflow-x: hidden !important;
@@ -87,5 +88,53 @@ html, body {
 .video {
   width: 100%;
   height: auto;
-  object-fit: cover;
+}
+
+/* SECTION SUBSCRIBE */
+
+main {
+  margin-top: -4px;
+}
+.subscribe {
+  width: 100%;
+  background-image: linear-gradient(45deg, var(--color-1), var(--color-2));
+  color: #fff;
+  padding: 1em;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label {
+  text-align: center;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.email {
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+}
+.email:focus, .email:active {
+  border: solid 3px var(--btn-color);
+  border-radius: 10px;
+  outline: none;
+}
+::placeholder {
+  font-style: italic;
+  font-size: 1em;
+}
+.submit {
+  margin-top: 1em;
+  padding: 1em;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  width: 60%;
+  align-self: center;
+  font-weight: bold;
+  background-color: var(--btn-color);
 }
