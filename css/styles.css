@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden !important;
 }
 html, body {
   width: 100%;
@@ -12,6 +13,9 @@ html, body {
   --color-1: #700a0a;
   --color-2: #992626;
   --color-2: #c35151;
+}
+.header, .mainm ,footer {
+  overflow-x: hidden !important;
 }
 
 /* HEADER */
@@ -51,8 +55,13 @@ html, body {
   position: absolute;
   width: 150px;
   top: 110px;
-  right: -20em;
+  right: 0;
   background-color: #fff;
+  transform: translateX(1000px);
+}
+.show {
+  transform: translateX(0);
+  transition: all 0.5s ease;
 }
 .main-nav ul li {
   padding: 1em;
