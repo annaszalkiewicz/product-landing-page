@@ -78,3 +78,14 @@ html, body {
 .main-nav ul li a:hover {
   color: var(--color-2);
 }
+
+/* HERO */
+
+.hero {
+  overflow: hidden;
+}
+.video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
