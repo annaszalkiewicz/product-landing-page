@@ -153,6 +153,7 @@ main {
 .about-icon {
   text-align: center;
   color: var(--color-1);
+  overflow: hidden;
 }
 .about-title {
   text-align: center;
