@@ -22,7 +22,6 @@ html, body {
 /* HEADER */
 
 .header {
-  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,7 +89,6 @@ html, body {
 .video {
   width: 100%;
   height: auto;
-  margin-top: 97px;
 }
 
 /* SECTION SUBSCRIBE */
@@ -262,4 +260,40 @@ main {
 }
 .copyright a:hover {
   color: var(--btn-color);
+}
+
+/* CONTACT SECTION */
+
+.contact-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--color-1);
+}
+.right {
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+}
+.contact-description {
+  text-align: justify;
+  padding: 1em;
+}
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+.contact-details i {
+  color: var(--color-1);
+  width: 20%;
+  align-self: right;
+}
+.contact-details div {
+  width: 80%;
+  align-self: left;
 }
