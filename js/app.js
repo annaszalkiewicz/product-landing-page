@@ -18,13 +18,9 @@ icon.addEventListener('click', toggleMenu);
 // Create google map
 
 var map;
-
-window.initMap = () => {
-	map = new window.google.maps.Map(document.getElementById('map'), {
-		zoom: 6,
-		center: { lat: 51.7730971, lng: 19.4105533 }
-	});
-	window.google.maps.event.addListenerOnce(map, 'idle', () => {
-		document.getElementsByTagName('iframe')[0].title = 'Google  Maps';
-	});
-};
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat: 51.7730971, lng: 19.4105533 },
+    zoom: 6
+  });
+}

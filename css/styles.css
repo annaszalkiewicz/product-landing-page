@@ -1,8 +1,7 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden !important;
 }
 html, body {
   width: 100%;
@@ -15,8 +14,12 @@ html, body {
   --color-2: #c35151;
   --btn-color: #ff9800;
 }
-.header, .mainm ,footer {
+.header, .main ,footer {
   overflow-x: hidden !important;
+}
+#map {
+  width: 100%;
+  height: 100%;;
 }
 
 /* HEADER */
@@ -185,9 +188,6 @@ main {
   text-align: justify;
   padding-top: 2em;
 }
-
-/* SECTION PRODUCTS */
-
 .container {
   max-width: 1300px;
   margin: 1em auto;
@@ -197,6 +197,9 @@ main {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/* SECTION PRODUCTS */
+
 .product-container {
   width: 300px;
   box-shadow: 0 0 20px #aaa;
@@ -244,32 +247,18 @@ main {
   font-weight: bold;
 }
 
-/* FOOTER */
-
-.footer {
-  align-items: center;
-  width: 100%;
-  padding: 2em;
-  background-image: linear-gradient(45deg, var(--color-1), var(--color-2));
-  color: #fff;
-  text-align: center;
-}
-.copyright a {
-  color: #fff;
-  text-decoration: none;
-}
-.copyright a:hover {
-  color: var(--btn-color);
-}
-
 /* CONTACT SECTION */
 
+#contact {
+  height: 100%;
+}
 .contact-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
   background-color: var(--color-1);
+  height: 100%;
 }
 .right {
   width: 100%;
@@ -278,7 +267,7 @@ main {
 }
 .left {
   width: 100%;
-  height: 50vh;
+  height: 100%;
 }
 #map {
   width: 100%;
@@ -304,4 +293,22 @@ main {
 .contact-details div {
   width: 80%;
   align-self: left;
+}
+
+/* FOOTER */
+
+.footer {
+  align-items: center;
+  width: 100%;
+  padding: 2em;
+  background-image: linear-gradient(45deg, var(--color-1), var(--color-2));
+  color: #fff;
+  text-align: center;
+}
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: var(--btn-color);
 }
