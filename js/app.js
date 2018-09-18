@@ -20,8 +20,18 @@ icon.addEventListener('click', toggleMenu);
 let map;
 
 initMap = () => {
+
 	map = new window.google.maps.Map(document.getElementById('map'), {
 		center: { lat: 51.7730971, lng: 19.4105533 },
 		zoom: 6
 	});
-}
+
+	marker = new window.google.maps.Marker({
+		position: { lat: 53.598052, lng: 18.036150 },
+		map: map,
+		title: 'Rosarium'
+	});
+
+	marker.setMap(map);
+};
+
