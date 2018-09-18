@@ -314,3 +314,22 @@ main {
 .copyright a:hover {
   color: var(--btn-color);
 }
+
+@media screen and (min-width: 360px) {
+  .subscribe-form {
+    margin: 1em;
+  }
+  .input-group {
+    margin-top: 1em;
+  }
+  .submit {
+    margin-top: 2em;
+  }
+  .heading {
+    font-size: 3em;
+    line-height: 4;
+  }
+  .about-container, .product-container, .product-image {
+    width: 330px;
+  }
+}
