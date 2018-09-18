@@ -17,10 +17,11 @@ icon.addEventListener('click', toggleMenu);
 
 // Create google map
 
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: 51.7730971, lng: 19.4105533 },
-    zoom: 6
-  });
+let map;
+
+initMap = () => {
+	map = new window.google.maps.Map(document.getElementById('map'), {
+		center: { lat: 51.7730971, lng: 19.4105533 },
+		zoom: 6
+	});
 }
