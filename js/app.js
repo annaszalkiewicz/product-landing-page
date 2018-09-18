@@ -33,7 +33,25 @@ window.initMap = () => {
 	});
 
 	marker.setMap(map);
+
+	marker.addListener('click', toggleBounce);
+
 };
+
+const toggleBounce = () => {
+
+	if (marker.getAnimation() !== null) {
+		marker.setAnimation(null);
+	} else {
+		marker.setAnimation(window.google.maps.Animation.BOUNCE);
+	}
+
+	setTimeout(() => {
+		marker.setAnimation(null);
+	}, 3000);
+
+};
+
 
 
 
