@@ -17,13 +17,13 @@ icon.addEventListener('click', toggleMenu);
 
 // Create google map
 
-let map;
+let map, marker;
 
-initMap = () => {
+window.initMap = () => {
 
 	map = new window.google.maps.Map(document.getElementById('map'), {
-		center: { lat: 51.7730971, lng: 19.4105533 },
-		zoom: 6
+		center: { lat: 53.598052, lng: 18.036150 },
+		zoom: 12
 	});
 
 	marker = new window.google.maps.Marker({
@@ -34,4 +34,6 @@ initMap = () => {
 
 	marker.setMap(map);
 };
+
+
 
