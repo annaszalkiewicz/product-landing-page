@@ -10,7 +10,7 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Product landing page</title>
+  <title>Google Map</title>
 </head>
 
 <body>
@@ -107,36 +107,40 @@
       </div>
 
     </section>
+
     <section id="contact">
-        <h2 class="heading">Contact us</h2>
-        <div class="contact-container">
-          <div class="right">
-            <p class="contact-description">Feel free to contact us over the phone or by e-mail. You are also welcome to visit our rose garden.</p>
-            <div class="contact-details">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <p>23, Lorem Ipsum Avenue</p>
-                <p>85-825, City, Country</p>
-              </div>
-            </div>
-            <div class="contact-details">
-              <i class="fas fa-phone"></i>
-              <div>
-                <p>+48 123 456 789</p>
-              </div>
-            </div>
-            <div class="contact-details">
-              <i class="fas fa-at"></i>
-              <div>
-                <p>mail@loremipsum.com</p>
-              </div>
+      <h2 class="heading">Contact us</h2>
+      <div class="contact-container">
+        <div class="right">
+          <p class="contact-description">Feel free to contact us over the phone or by e-mail. You are also welcome to visit
+            our rose garden.</p>
+          <div class="contact-details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <p>23, Lorem Ipsum Avenue</p>
+              <p>85-825, City, Country</p>
             </div>
           </div>
-          <div class="left">
+          <div class="contact-details">
+            <i class="fas fa-phone"></i>
+            <div>
+              <p>+48 123 456 789</p>
+            </div>
+          </div>
+          <div class="contact-details">
+            <i class="fas fa-at"></i>
+            <div>
+              <p>mail@loremipsum.com</p>
+            </div>
           </div>
         </div>
+        <div class="left">
+        </div>
+      </div>
     </section>
+
   </main>
+
   <div id="map"></div>
 
   <footer class="footer">
@@ -144,9 +148,11 @@
       <a href="https://mywebgraphicdesign.com" target="_blank">Anna Szalkiewicz</a>
     </p>
   </footer>
-  
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf26YXhGHSk1MxVmC2BfMTG5EJp5gHUrA&callback=initMap" async
+    defer></script>
   <script src="js/app.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf26YXhGHSk1MxVmC2BfMTG5EJp5gHUrA&callback=initMap"></script>
 </body>
 
 </html>
