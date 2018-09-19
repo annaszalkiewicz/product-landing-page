@@ -330,6 +330,10 @@ main {
 /* Responsive design for tablets */
 
 @media screen and (min-width: 768px) {
+  .header {
+    position: fixed;
+    box-shadow: 0 0 300px #000;
+  }
   .logo {
     height: 90px;
   }
@@ -354,6 +358,9 @@ main {
   }
   .main-nav ul li a {
     color: #fff;
+  }
+  .video {
+    margin-top: 5em;
   }
   .label {
     font-size: 1.5em;
@@ -392,5 +399,16 @@ main {
     display: block;
     margin: 1em;
     width: 40%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-container, .product-container, .product-image {
+    width: 400px;
+  }
+  .heading {
+    background: linear-gradient(rgba(112,10,10,0.8), rgba(153,38,38,0.8)), url('../img/background-large.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
